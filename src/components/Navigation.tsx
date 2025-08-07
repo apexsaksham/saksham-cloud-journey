@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Download } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +45,7 @@ const Navigation = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.name}
@@ -54,6 +55,7 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
+            <ThemeToggle />
             <Button variant="download" size="sm">
               <Download className="mr-2 h-4 w-4" />
               Resume
@@ -83,10 +85,13 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
-              <Button variant="download" size="sm" className="w-full mt-4">
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
-              </Button>
+              <div className="flex space-x-3 pt-2">
+                <ThemeToggle />
+                <Button variant="download" size="sm" className="flex-1">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </Button>
+              </div>
             </div>
           </div>
         )}

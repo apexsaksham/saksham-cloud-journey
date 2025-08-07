@@ -74,41 +74,60 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    /* Dark theme with enhanced cloud colors */
+    --background: 222 47% 8%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 222 47% 11%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Enhanced primary for dark mode */
+    --primary: 213 94% 78%;
+    --primary-foreground: 222 47% 8%;
+    --primary-glow: 213 94% 88%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    /* Dark sky tones */
+    --secondary: 217 32% 17%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    /* Dark muted tones */
+    --muted: 217 32% 15%;
+    --muted-foreground: 215 20% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    /* Enhanced accent for dark mode */
+    --accent: 198 93% 70%;
+    --accent-foreground: 222 47% 8%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217 32% 20%;
+    --input: 217 32% 20%;
+    --ring: 213 94% 78%;
+
+    /* Dark theme gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(213 94% 78%) 0%, hsl(198 93% 70%) 50%, hsl(222 47% 8%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 11%) 0%, hsl(217 32% 15%) 100%);
+    --gradient-tech: linear-gradient(90deg, hsl(213 94% 78%) 0%, hsl(198 93% 70%) 100%);
+
+    /* Enhanced dark shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(213 94% 78% / 0.1);
+    --shadow-md: 0 4px 6px -1px hsl(213 94% 78% / 0.15), 0 2px 4px -1px hsl(213 94% 78% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(213 94% 78% / 0.2), 0 4px 6px -2px hsl(213 94% 78% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(213 94% 78% / 0.25), 0 10px 10px -5px hsl(213 94% 78% / 0.1);
+    --shadow-glow: 0 0 30px hsl(213 94% 78% / 0.4);
+
+    --sidebar-background: 240 6% 10%;
+    --sidebar-foreground: 240 5% 96%;
+    --sidebar-primary: 213 94% 78%;
+    --sidebar-primary-foreground: 222 47% 8%;
+    --sidebar-accent: 240 4% 16%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 16%;
+    --sidebar-ring: 213 94% 78%;
   }
 }
 
@@ -146,6 +165,11 @@ All colors MUST be HSL.
     backdrop-filter: blur(10px);
     background: hsla(0, 0%, 100%, 0.1);
     border: 1px solid hsla(213, 94%, 68%, 0.2);
+  }
+  
+  .dark .glass-effect {
+    background: hsla(222, 47%, 11%, 0.8);
+    border: 1px solid hsla(213, 94%, 78%, 0.3);
   }
 }
 

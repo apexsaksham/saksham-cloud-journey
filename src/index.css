@@ -8,15 +8,15 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Cloud-inspired color palette */
+    /* Cloud-inspired color palette with improved contrast */
     --background: 210 40% 98%;
-    --foreground: 215 25% 27%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 215 25% 15%;
 
     /* Cloud blue primary theme */
     --primary: 213 94% 68%;
@@ -25,11 +25,11 @@ All colors MUST be HSL.
 
     /* Sky-inspired secondary */
     --secondary: 210 40% 96%;
-    --secondary-foreground: 215 25% 27%;
+    --secondary-foreground: 215 25% 15%;
 
     /* Muted cloud tones */
     --muted: 210 40% 95%;
-    --muted-foreground: 215 20% 55%;
+    --muted-foreground: 215 20% 35%;
 
     /* Tech accent colors */
     --accent: 198 93% 60%;
@@ -74,15 +74,15 @@ All colors MUST be HSL.
   }
 
   .dark {
-    /* Dark theme with enhanced cloud colors */
+    /* Dark theme with enhanced contrast */
     --background: 222 47% 8%;
-    --foreground: 210 40% 98%;
+    --foreground: 210 40% 95%;
 
     --card: 222 47% 11%;
-    --card-foreground: 210 40% 98%;
+    --card-foreground: 210 40% 95%;
 
     --popover: 222 47% 11%;
-    --popover-foreground: 210 40% 98%;
+    --popover-foreground: 210 40% 95%;
 
     /* Enhanced primary for dark mode */
     --primary: 213 94% 78%;
@@ -91,18 +91,18 @@ All colors MUST be HSL.
 
     /* Dark sky tones */
     --secondary: 217 32% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 210 40% 95%;
 
     /* Dark muted tones */
     --muted: 217 32% 15%;
-    --muted-foreground: 215 20% 70%;
+    --muted-foreground: 215 20% 80%;
 
     /* Enhanced accent for dark mode */
     --accent: 198 93% 70%;
     --accent-foreground: 222 47% 8%;
 
     --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 210 40% 95%;
 
     --border: 217 32% 20%;
     --input: 217 32% 20%;
